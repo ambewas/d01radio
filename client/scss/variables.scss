@@ -1,0 +1,81 @@
+// variables
+
+$pj-medium-up: 600px;
+$pj-large-up: 1024px;
+
+//grid-steps to use for paddings, margins, line-heights,...
+
+$pj-step-1: 4px;
+$pj-step-2: 8px;
+$pj-step-3: 12px;
+$pj-step-4: 16px;
+$pj-step-5: 20px;
+$pj-step-6: 24px;
+$pj-step-7: 28px;
+$pj-step-8: 32px;
+$pj-step-9: 36px;
+$pj-step-10: 40px;
+$pj-step-11: 44px;
+$pj-step-12: 48px;
+$pj-step-13: 52px;
+$pj-step-14: 56px;
+$pj-step-15: 60px;
+$pj-step-16: 64px;
+$pj-step-17: 68px;
+$pj-step-18: 72px;
+$pj-step-19: 76px;
+$pj-step-20: 78px;
+
+// margins
+$pj-margin-small: $pj-step-2;
+$pj-margin-small-medium: $pj-step-3;
+$pj-margin-medium: $pj-step-4;
+$pj-margin-large: $pj-step-6;
+$pj-margin-huge: $pj-step-8;
+
+// paddings
+$pj-padding-small: $pj-step-2;
+$pj-padding-small-medium: $pj-step-3;
+$pj-padding-medium: $pj-step-4;
+$pj-padding-large: $pj-step-6;
+$pj-padding-huge: $pj-step-8;
+
+// colors
+$pj-primary: #fd9f3f;
+$pj-secondary: #3498db;
+
+// greys
+$system-background: #fbfbfb;
+$pj-dark-grey: #333;
+$pj-medium-grey: #666;
+$pj-neutral-grey: #999;
+$pj-light-grey: #cccccc;
+$pj-extra-light-grey: #e4e4e4;
+$pj-super-light-grey: #f2f2f2;
+$pj-white: #fff;
+
+$pj-translucent-grey: rgba(0,0,0, .2);
+$pj-translucent-white: rgba(255,255,255, .75);
+
+// font-sizes
+$pj-font-size-small: 13px;
+$pj-font-size-medium: 14px;
+$pj-font-size-main: 16px;
+
+
+// animations
+
+$pj-ease-out: cubic-bezier(0.230, 1.000, 0.320, 1.000);
+$pj-ease-in: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+// component specifics
+
+// buttons
+$pj-button-padding-medium: 1rem;
+$pj-button-padding-large: 1.5rem 2.7rem;
+
+// navbar
+$navbar-height: 50px;
+
+
+// //////////// react toolbox overrides
+$color-primary: $pj-secondary;

@@ -1,0 +1,300 @@
+@import "~breakpoint-sass";
+
+:global {
+
+/* paddings */
+/* these are overrides, must always apply (hence the !important) */
+
+  .pj-padding-none {
+    padding: 0 !important; //overriding everything
+  }
+
+  .pj-padding-tiny {
+    padding: $pj-step-1 !important;
+  }
+
+  .pj-padding-small {
+    padding: $pj-padding-small !important;
+  }
+
+  .pj-padding-small-medium {
+    padding: $pj-padding-small-medium !important;
+  }
+
+  .pj-padding-medium {
+    padding: $pj-padding-medium !important;
+  }
+
+  .pj-padding-large {
+    padding: $pj-padding-large !important;
+  }
+
+  .pj-padding-tiny-top-bottom {
+    padding: $pj-step-1 0 !important;
+  }
+
+  .pj-padding-small-top-bottom {
+    padding: $pj-padding-small 0 !important;
+  }
+
+  .pj-padding-small-medium-top-bottom {
+    padding: $pj-padding-small-medium 0 !important;
+  }
+
+  .pj-padding-medium-top-bottom {
+    padding: $pj-padding-medium 0 !important;
+  }
+
+  .pj-padding-large-top-bottom {
+    padding: $pj-padding-large 0 !important;
+  }
+
+  .pj-padding-small-left-right {
+    padding: 0 $pj-padding-small !important;
+  }
+
+  .pj-padding-small-medium-left-right {
+    padding: 0 $pj-padding-small-medium !important;
+  }
+
+  .pj-padding-medium-left-right {
+    padding: 0 $pj-padding-medium !important;
+  }
+
+  .pj-padding-large-left-right {
+    padding: 0 $pj-padding-large !important;
+  }
+
+  .pj-padding-small-left {
+    padding-left: $pj-padding-small !important;
+  }
+
+  .pj-padding-small-medium-left {
+    padding-left: $pj-padding-small-medium !important;
+  }
+
+  .pj-padding-medium-left {
+    padding-left: $pj-padding-medium !important;
+  }
+
+  .pj-padding-large-left {
+    padding-left: $pj-padding-large !important;
+  }
+
+  .pj-padding-small-right {
+    padding-right: $pj-padding-small !important;
+  }
+
+  .pj-padding-small-medium-right {
+    padding-right: $pj-padding-small-medium !important;
+  }
+
+  .pj-padding-medium-right {
+    padding-right: $pj-padding-medium !important;
+  }
+
+  .pj-padding-large-right {
+    padding-right: $pj-padding-large !important;
+  }
+
+  .pj-padding-small-top {
+    padding-top: $pj-padding-small !important;
+  }
+
+  .pj-padding-small-medium-top {
+    padding-top: $pj-padding-small-medium !important;
+  }
+
+  .pj-padding-medium-top {
+    padding-top: $pj-padding-medium !important;
+  }
+
+  .pj-padding-large-top {
+    padding-top: $pj-padding-large !important;
+  }
+
+  .pj-padding-small-bottom {
+    padding-bottom: $pj-padding-small !important;
+  }
+
+  .pj-padding-small-medium-bottom {
+    padding-bottom: $pj-padding-small-medium !important;
+  }
+
+  .pj-padding-medium-bottom {
+    padding-bottom: $pj-padding-medium !important;
+  }
+
+  .pj-padding-large-bottom {
+    padding-bottom: $pj-padding-large !important;
+  }
+
+  .pj-padding-huge-top {
+    padding-top: $pj-step-18;
+  }
+
+  .pj-padding-huge-bottom {
+    padding-bottom: $pj-step-18;
+  }
+
+  .pj-padding-huge-left {
+    padding-left: $pj-step-18;
+  }
+
+  .pj-padding-huge-right {
+    padding-right: $pj-step-18;
+  }
+
+  //responsive paddings for contentblocks
+  .pj-padding-responsive-left-right {
+    padding-left: $pj-padding-medium;
+    padding-right: $pj-padding-medium;
+
+    @include breakpoint($pj-medium-up) {
+      padding-left: $pj-padding-large;
+      padding-right: $pj-padding-large;
+    }
+
+    @include breakpoint($pj-large-up) {
+      padding-left: $pj-padding-huge;
+      padding-right: $pj-padding-huge;
+    }
+  }
+
+  .pj-padding-responsive-left {
+    padding-left: $pj-padding-medium;
+
+    @include breakpoint($pj-medium-up) {
+      padding-left: $pj-padding-large;
+    }
+
+    @include breakpoint($pj-large-up) {
+      padding-left: $pj-padding-huge;
+    }
+  }
+
+  .pj-padding-responsive-right {
+    padding-right: $pj-padding-medium;
+
+    @include breakpoint($pj-medium-up) {
+      padding-right: $pj-padding-large;
+    }
+
+    @include breakpoint($pj-large-up) {
+      padding-right: $pj-padding-huge;
+    }
+  }
+
+  .pj-padding-responsive {
+    padding: $pj-padding-medium;
+
+    @include breakpoint($pj-medium-up) {
+      padding: $pj-padding-medium $pj-padding-large;
+    }
+
+    @include breakpoint($pj-large-up) {
+      padding: $pj-padding-large $pj-padding-huge;
+    }
+  }
+
+  .pj-padding-responsive-bottom {
+    padding-bottom: $pj-padding-medium;
+
+    @include breakpoint($pj-large-up) {
+      padding-bottom: $pj-padding-large;
+    }
+  }
+
+  .pj-padding-responsive-top {
+    padding-top: $pj-padding-medium;
+
+    @include breakpoint($pj-large-up) {
+      padding-top: $pj-padding-large;
+    }
+  }
+
+
+  //responsive margins small for contentblocks
+  .pj-padding-responsive-small-left-right {
+    padding-left: $pj-padding-small;
+    padding-right: $pj-padding-small;
+
+    @include breakpoint($pj-medium-up) {
+      padding-left: $pj-padding-medium;
+      padding-right: $pj-padding-medium;
+    }
+
+    @include breakpoint($pj-large-up) {
+      padding-left: $pj-padding-large;
+      padding-right: $pj-padding-large;
+    }
+  }
+
+  .pj-padding-responsive-small-left {
+    padding-left: $pj-padding-small;
+
+    @include breakpoint($pj-medium-up) {
+      padding-left: $pj-padding-medium;
+    }
+
+    @include breakpoint($pj-large-up) {
+      padding-left: $pj-padding-large;
+    }
+  }
+
+  .pj-padding-responsive-small-right {
+    padding-right: $pj-padding-small;
+
+    @include breakpoint($pj-medium-up) {
+      padding-right: $pj-padding-medium;
+    }
+
+    @include breakpoint($pj-large-up) {
+      padding-right: $pj-padding-large;
+    }
+  }
+
+  .pj-padding-responsive-small {
+    padding: $pj-padding-small;
+
+    @include breakpoint($pj-medium-up) {
+      padding: $pj-padding-small $pj-padding-medium;
+    }
+
+    @include breakpoint($pj-large-up) {
+      padding: $pj-padding-medium $pj-padding-large;
+    }
+  }
+
+  .pj-padding-responsive-small-bottom {
+    padding-bottom: $pj-padding-small;
+
+    @include breakpoint($pj-large-up) {
+      padding-bottom: $pj-padding-medium;
+    }
+  }
+
+  .pj-padding-responsive-small-top {
+    padding-top: $pj-padding-small;
+
+    @include breakpoint($pj-large-up) {
+      padding-top: $pj-padding-medium;
+    }
+  }
+
+
+  .pj-reverse-responsive-paddings {
+    padding-left: -$pj-padding-medium;
+    padding-right: -$pj-padding-medium;
+
+    @include breakpoint($pj-medium-up) {
+      padding-left: -$pj-padding-large;
+      padding-right: -$pj-padding-large;
+    }
+
+    @include breakpoint($pj-large-up) {
+      padding-left: -$pj-padding-huge;
+      padding-right: -$pj-padding-huge;
+    }
+  }
+}

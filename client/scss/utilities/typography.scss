@@ -1,0 +1,115 @@
+/* text aligns */
+
+// @import 'https://fonts.googleapis.com/css?family=Lato:100,400,300|Roboto:300';
+:global {
+  a {
+    display: inline-block;
+  }
+
+
+  html {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1 {
+      font-family: "Lato", sans-serif;
+      font-size: 50px;
+      font-weight: 100;
+      line-height: 1.20;
+      opacity: 1.00;
+      margin-top: 0px;
+      margin-bottom: 10px;
+      letter-spacing: -0.85px;
+      word-spacing: 3.40px;
+      text-transform: capitalize;
+  }
+
+  h2 {
+      font-family: "Lato", sans-serif;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 1.20;
+      opacity: 1.00;
+      margin-top: 30px;
+      margin-bottom: 5px;
+      letter-spacing: -0.72px;
+      word-spacing: 0.00px;
+      text-transform: none;
+  }
+
+  h3 {
+      font-family: "Lato", sans-serif;
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 1.20;
+      opacity: 1.00;
+      margin-top: 30px;
+      margin-bottom: 5px;
+      letter-spacing: 0.00px;
+      word-spacing: 0.00px;
+      text-transform: none;
+  }
+
+  p {
+      font-family: "Roboto", sans-serif;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 1.45;
+      opacity: 0.70;
+      margin-top: 16px;
+      margin-bottom: 16px;
+      letter-spacing: -0.30px;
+      word-spacing: -0.10px;
+      text-transform: none;
+  }
+
+  .pj-textalign-left {
+    text-align: left;
+  }
+
+  .pj-textalign-center {
+    text-align: center;
+  }
+
+  .pj-textalign-right {
+    text-align: right;
+  }
+
+  /* text transforms */
+  .pj-capitalize {
+    text-transform: capitalize;
+  }
+
+  .pj-white {
+    color: $pj-white !important; // must override react-toolbox
+    button {
+      color: $pj-white !important;
+    }
+  }
+
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+}

@@ -1,0 +1,43 @@
+/* show/hide responsive utilities */
+
+:global {
+  @media screen and (max-width:$pj-medium-up - 1) {
+    .pj-show-medium-up {
+      display: none !important;
+    }
+  }
+
+  @media screen and (min-width:$pj-medium-up) {
+    .pj-hide-medium-up {
+      display: none !important;
+    }
+  }
+
+  @media screen and (min-width:$pj-large-up) {
+    .pj-hide-large-up {
+      display: none !important;
+    }
+  }
+  @media screen and (max-width:$pj-large-up - 1) {
+    .pj-show-large-up {
+      display: none !important;
+    }
+  }
+
+  @media screen and (min-width:938px) { //special case for samsung tablets landscape
+    .pj-hide-samsung-landscape-up {
+      display: none !important;
+    }
+  }
+  @media screen and (max-width:938px) { //special case for samsung tablets landscape
+    .pj-show-samsung-landscape-up {
+      display: none !important;
+    }
+  }
+
+  .pj-accessibility-enlarge {
+    .pj-accessibility-hidden {
+      display: none !important;
+    }
+  }
+}

@@ -1,0 +1,6 @@
+@mixin easeOutQuint($timing, $property: all) {
+  -webkit-transition: $property $timing cubic-bezier(0.230, 1.000, 0.320, 1.000);
+     -moz-transition: $property $timing cubic-bezier(0.230, 1.000, 0.320, 1.000);
+       -o-transition: $property $timing cubic-bezier(0.230, 1.000, 0.320, 1.000);
+          transition: $property $timing cubic-bezier(0.230, 1.000, 0.320, 1.000); /* easeOutQuint */
+}
